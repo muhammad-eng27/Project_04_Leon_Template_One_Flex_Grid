@@ -1,0 +1,179 @@
+/*#########################$DeskTop First Method$##############################*/
+/*###Most Common Used Break Points _ 1400px _ 1200px _ 992px _ 768px _ 576px###*/
+/*#############################################################################*/
+
+/*#############################################################################*/
+/*###########################$XX-Large <= (1400px)$############################*/
+/*#############################################################################*/
+@media (max-width: 1400px) {
+	/* Container */
+	.container {
+		max-width: 1320px;
+	}
+}
+/*#############################################################################*/
+/*############################$X-Large <= (1200px)$############################*/
+/*#############################################################################*/
+@media (max-width: 1200px) {
+	/* Container */
+	.container {
+		max-width: 1140px;
+	}
+	/* Features Section */
+	.features-div {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+	/* Services Section */
+	.col-img {
+		display: none;
+	}
+	.services-content {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	}
+	/* Portfolio Section */
+	.Portfolio-content {
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		grid-gap: 30px;
+	}
+	/* Start About Section */
+	.about-content {
+		justify-content: space-between;
+	}
+	.about-text {
+		flex-basis: calc(100% - 500px);
+	}
+}
+/*#############################################################################*/
+/*#############################$Large >= (992px)$##############################*/
+/*#############################################################################*/
+@media (max-width: 992px) {
+	/* Container */
+	.container {
+		max-width: 960px;
+	}
+	/* Features Section */
+	.features-div {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 30px;
+	}
+	/* Services Section */
+	.col-img {
+		display: none;
+	}
+	.services-content {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+	/* Start About Section */
+	.about-content {
+		justify-content: space-between;
+	}
+	.about-text {
+		flex-basis: calc(100% - 300px);
+	}
+	.about-img::after,
+	.about-img::before {
+		display: none;
+	}
+}
+/*#############################################################################*/
+/*#############################$Medium <= (768px)$#############################*/
+/*#############################################################################*/
+@media (max-width: 768px) {
+	/* Container */
+	.container {
+		max-width: 720px;
+	}
+	/* Services Section */
+	.srv {
+		flex-direction: column;
+		text-align: center;
+	}
+	.srv i {
+		flex-basis: 50px;
+	}
+	/* Start About Section */
+	.about-content {
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-between;
+	}
+	.about-text {
+		flex-basis: calc(100% - 300px);
+	}
+	.about-img {
+		margin: 0px auto 60px;
+	}
+	.about-img::after,
+	.about-img::before {
+		display: block;
+	}
+	.about-img::after {
+		top: -40px;
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: calc(100% + 80px);
+		background-color: var(--main-color);
+		z-index: -1;
+		right: -20px;
+	}
+	/* Start Contact Section */
+	.contact-para {
+		font-size: 30px;
+	}
+	.contact-link {
+		font-size: 30px;
+	}
+}
+/*#############################################################################*/
+/*#############################$Small <= (576px)$##############################*/
+/*#############################################################################*/
+@media (max-width: 576px) {
+	/* Container */
+	.container {
+		max-width: 540px;
+	}
+	/* Start Global Rules */
+	.special-heading {
+		font-size: 60px;
+	}
+	.special-heading + p {
+		margin-top: -20px;
+	}
+}
+/*#############################################################################*/
+/*##########################$Extra Small < (500px)$############################*/
+/*#############################################################################*/
+@media (max-width: 500px) {
+	/* Container */
+	.container {
+		max-width: 100%;
+	}
+	/* Landing Section */
+	.intro-text h1 {
+		font-size: 40px;
+	}
+	.intro-text p {
+		font-size: 17px;
+	}
+	/* Features Section */
+	.features-div {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 40px;
+	}
+	/* Start Contact Section */
+	.contact-para {
+		font-size: 25px;
+	}
+	.contact-link {
+		font-size: 25px;
+	}
+	/* Services Section */
+	.services-section {
+		padding: 60px 0px 0 0;
+	}
+	.services-content {
+		grid-gap: 0px;
+		margin-top: 75px;
+	}
+}
